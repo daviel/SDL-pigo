@@ -263,7 +263,7 @@ RPI_CreateWindow(_THIS, SDL_Window * window)
     const char *env;
 
     /* Disable alpha, otherwise the app looks composed with whatever dispman is showing (X11, console,etc) */
-    dispman_alpha.flags = DISPMANX_FLAGS_ALPHA_FIXED_ALL_PIXELS; 
+    dispman_alpha.flags = DISPMANX_FLAGS_ALPHA_FROM_SOURCE; 
     dispman_alpha.opacity = 0xFF; 
     dispman_alpha.mask = 0;
 
